@@ -87,7 +87,7 @@ header .box{
 }
 
 .nav-box a{
-    font-weight: 500;
+    font-weight:var(--font-w-medium);
     font-size: 20px;
     line-height: 24px;
     color: var(--gray);
@@ -118,7 +118,7 @@ header .box{
 }
 
 .main-screen h2{
-    font-weight: 600;
+    font-weight: var(--font-w-bold);
     font-size: 80px;
     line-height: 97px;
     color: var(--gray);
@@ -145,7 +145,7 @@ header .box{
 }
 
 .main-screen .more p{
-    font-weight: 400;
+    font-weight: var(--font-w-medium-l);
     font-size: 20px;
     line-height: 24px;
     color: var(--white);
@@ -160,7 +160,7 @@ header .box{
 }
 
 .main-screen .img-box p{
-    font-weight: 600;
+    font-weight:var(--font-w-bold);
     font-size: 22px;
     line-height: 128.52%;
     color: var(--gray);
@@ -173,7 +173,7 @@ header .box{
     right: -3%;
     transform: translate(-50%, -50%) rotate(90deg);
     color: var(--white);
-    font-weight: 300;
+    font-weight: var(--font-w-light);
     font-size: 20px;
     line-height: 24px;
 }
@@ -212,7 +212,7 @@ header .box{
 .concept .text-box  h2{
     hyphens: auto;
     max-width: 194px;
-    font-weight: 600;
+    font-weight: var(--font-w-bold);
     font-size: 75px;
     color: var(--beige);
 }
@@ -221,7 +221,7 @@ header .box{
     max-width: 333px;
     margin-top: 60px;
     margin-left: 70px;
-    font-weight: 300;
+    font-weight:var(--font-w-light);
     font-size: 20px;
     line-height: 134.02%;
     color: var(--gray);

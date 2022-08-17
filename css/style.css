@@ -349,6 +349,13 @@ header .box {
     text-align: start;
     flex-direction: column;
     box-shadow: 14px 20px 57px rgba(0, 0, 0, 0.15);
+    transition: .3s;
+}
+
+.cabinet .second-part .text-box:hover{
+    transform: scale(1.05);
+    box-shadow: 14px 20px 57px rgba(0, 0, 0, 0.25);
+    transition: .3s;
 }
 
 .cabinet  .second-part .box{
@@ -396,10 +403,18 @@ header .box {
     height: auto;
 }
 
+.cabinet .second-part .img-box img:nth-child(2){
+    z-index: -1;
+    position: absolute;
+    top: -9%;
+    right: 37%;
+    max-width: 364px;
+}
+
 .cabinet .second-part .img-box{
     position: absolute;
     display: flex;
     justify-content: center;
     top: -25%;
-    right: -10%;
+    right: -12vw;
 }

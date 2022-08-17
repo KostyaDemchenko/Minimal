@@ -1,0 +1,130 @@
+@media only screen and (max-width: 500px){
+
+    header{
+        padding-top: 20px;
+        padding-bottom: 60px;
+    }
+
+    header .box{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .logo-box{
+        transform: scale(0.5);
+    }
+
+    .nav-box{
+        max-width: 200px;
+    }
+
+    .nav-box a{
+        font-weight: var(--font-w-medium);
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .main-screen .container{
+        flex-direction: column-reverse;
+    }
+
+    .main-screen .img-box img{
+        max-width: 318px;
+    }
+
+    .main-screen .container{
+        margin: 0 30px;
+    }
+
+    .main-screen h2{
+        padding: 0 10px;
+        font-size: 40px;
+        line-height: 48px;
+        max-width: 300px;
+        margin-top: 5px;
+        margin-bottom: 21px;
+    }
+
+    .main-screen .email{
+        top: 110%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%) rotate(0);
+        color: var(--gray);
+        font-weight: var(--font-w-light);
+        font-size: 9px;
+        line-height: 11px;
+    }
+
+    .main-screen .email{
+        display: none;
+    }
+
+    .main-screen .img-box p{
+        display: none;
+    }
+
+    .main-screen .mobile-content, .main-screen .mobile-content a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: var(--gray);
+    }
+
+    .main-screen .mobile-content p{
+        font-weight: var(--font-w-bold);
+        font-size: 12px;
+        line-height: 128.52%;
+        position: relative;
+    }
+
+    .main-screen .mobile-content p::after{
+        position: absolute;
+        content: "";
+        width: 32px;
+        height: 5px;
+        background-color: var(--green);
+        top: -50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+    }
+
+    .main-screen .mobile-content a{
+        margin: 60px 0;
+        font-weight: var(--font-w-light);
+        font-size: 9px;
+        line-height: 11px;
+    }
+
+    /* Consept */
+
+    .concept{
+        position: relative;
+        padding-top: 377px;
+    }
+
+    .bg-concept{
+        max-width: 65%;
+        max-height: 505px;
+        top: 105%;
+    }
+    .bg-concept::before{
+        left: 1%;
+        bottom: 8%; 
+    }
+
+    .concept .img-box{
+        display: none;
+    }
+
+    .concept .text-box h2 {
+        font-weight: var(--font-w-bold);
+        font-size: 75px;
+        color: var(--beige);
+        margin: 0;
+        padding: 0;
+        max-width: 148px;
+    }
+}

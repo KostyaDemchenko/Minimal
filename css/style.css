@@ -84,6 +84,7 @@ header .box{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .nav-box a{
@@ -91,9 +92,17 @@ header .box{
     font-size: 20px;
     line-height: 24px;
     color: var(--gray);
+    transition: .3s;
 }
 
-.bg-main-screen {
+
+.nav-box a:hover{
+    font-size: 21px;
+    font-weight: var(--font-w-bold);
+    transition: .3s;
+}
+
+.bg-main-screen{
     position: absolute;
     top: 0;
     right: 0;
@@ -127,6 +136,10 @@ header .box{
     margin-bottom: 20px;
 }
 
+.main-screen .mobile-content{
+    display: none;    
+}
+
 .main-screen .more{
     border-radius: 0;
     background-color: var(--blue);
@@ -157,6 +170,12 @@ header .box{
     background-image: url("data:image/svg+xml,%3Csvg width='20' height='16' viewBox='0 0 20 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.7071 8.70711C20.0976 8.31658 20.0976 7.68342 19.7071 7.29289L13.3431 0.928932C12.9526 0.538408 12.3195 0.538408 11.9289 0.928932C11.5384 1.31946 11.5384 1.95262 11.9289 2.34315L17.5858 8L11.9289 13.6569C11.5384 14.0474 11.5384 14.6805 11.9289 15.0711C12.3195 15.4616 12.9526 15.4616 13.3431 15.0711L19.7071 8.70711ZM0 9H19V7H0V9Z' fill='white'/%3E%3C/svg%3E%0A");
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+.main-screen .img-box img{
+    width: 100%;
+    max-width: 467px;
+    height: auto;
 }
 
 .main-screen .img-box p{
@@ -200,6 +219,17 @@ header .box{
     background-repeat: no-repeat;
 }
 
+.bg-concept::before{
+    position: absolute;
+    content: "";
+    width: 55px;
+    height: 55px;
+    background-color: var(--green);
+    bottom: 0;
+    left: 0;
+    transform: translate(50%, 50%);
+}
+
 .concept .container{
     display: flex;
     justify-content: flex-end;
@@ -210,7 +240,6 @@ header .box{
 }
 
 .concept .text-box  h2{
-    hyphens: auto;
     max-width: 194px;
     font-weight: var(--font-w-bold);
     font-size: 75px;
